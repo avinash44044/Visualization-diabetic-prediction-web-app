@@ -1,0 +1,127 @@
+
+h1{
+    color: #45a049;
+    border: 34px;
+    padding: 12px 12px;
+
+}
+h3{
+    padding: 0%;
+    border: 0%;
+    color: #0c0f0c;
+}
+.cointanier{
+    width: 50px;
+}
+
+#photo{
+    align-items: left;
+
+}
+img{
+    width: 380px;
+    float: left;
+    border-radius: 12px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e3b9d6;
+    text-align: center;
+    padding: 20px;
+}
+
+input {
+    margin: 5px;
+    padding: 8px;
+    width: 200px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 12px;
+
+}
+
+button:hover {
+    background-color: #456ea0;
+    transform: scale(1.13);
+}
+
+
+#pregnancies{
+    border-radius: 12px;
+}
+#glucose{
+    border-radius: 12px;
+
+}
+
+#bloodpressure{
+    border-radius: 12px;
+
+}
+
+#skinthickness{
+    border-radius: 12px;
+
+}
+
+#insulin{
+    border-radius: 12px;
+
+
+}
+
+#bmi{
+    border-radius: 12px;
+
+}
+
+#dpf{    border-radius: 12px;
+}
+
+#age{
+    border-radius: 12px;
+
+}
+#result {
+    font-weight: bold;
+    font-size: 18px;
+    background-color: white;  /* Background for visibility */
+    padding: 10px;             /* Padding for readability */
+    border-radius: 5px;        /* Rounded corners */
+    text-align: center;        
+    display: inline-block;     /* Makes it fit the text only */
+    position: relative;        /* Prevents overlap */
+    margin-bottom: 20px;       /* Creates space before insights */
+}
+
+
+#chartContainer {
+    margin-top: 20px; /* Pushes charts down */
+}
+
+.tooltip {
+    position: absolute;
+    background: #fff3cd;
+    padding: 5px 10px;
+    font-size: 12px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    display: none;
+    max-width: 200px;
+    z-index: 10;
+    text-align: center;
+    transform: translateX(-50%);
+    white-space: normal;
+    top: 0;
+    left: 0;
+}
+
+#pieChart{
+    align-items: center;
+}

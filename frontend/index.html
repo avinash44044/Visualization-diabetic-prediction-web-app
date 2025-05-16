@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Diabetes Prediction and Visualization</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js Library -->
+</head>
+<body>
+    <h1>Diabetes Prediction and Visualization</h1>
+    
+    <div id="photo">
+        <img src="diabetes.jpg">
+    </div>
+    
+    <div id="container">
+        <form id="predictionForm">
+            <h3>Fill out the form</h3>
+            <input type="number" id="pregnancies" placeholder="Pregnancies" required oninput="showInfo('pregnancies')">
+            <input type="number" id="glucose" placeholder="Glucose" required oninput="showInfo('glucose')">
+            <input type="number" id="bloodpressure" placeholder="Blood Pressure" required oninput="showInfo('bloodpressure')">
+            <input type="number" id="skinthickness" placeholder="Skin Thickness" required step="0.01" oninput="showInfo('skinthickness')">
+            <input type="number" id="insulin" placeholder="Insulin" required step="0.01" oninput="showInfo('insulin')">
+            <input type="number" id="bmi" placeholder="BMI" step="0.1" required oninput="showInfo('bmi')">
+            <input type="number" id="dpf" placeholder="DPF" step="0.001" required oninput="showInfo('dpf')">
+            <input type="number" id="age" placeholder="Age" required oninput="showInfo('age')">
+            <br><br>
+
+            <!-- Buttons in a single row -->
+            <div id="buttonContainer">
+                <button type="submit" id="predictButton">Predict</button>
+                <button id="viewCharts">View Insights</button>
+            </div>
+        </form>
+
+        <div id="parameterInfo" class="tooltip"></div>
+
+        <!-- Prediction result below buttons -->
+        <p id="result" style="font-weight: bold; font-size: 18px; margin-top: 20px;"></p> 
+
+        <!-- Parameter Info Section -->
+        <div id="parameterInfo" style="display: none; margin-top: 20px; padding: 15px; background-color: #f8f9fa; border-radius: 8px;">
+            <h3>About the Parameters</h3>
+            <p id="infoText"></p>
+        </div>
+
+        <!-- Insights Chart -->
+        <div id="chartContainer" style="display:none; margin-top: 20px;">
+            <canvas id="myChart"></canvas>
+
+            <!-- Legend below the chart -->
+<div id="chartLegend" style="text-align: center; margin-top: 10px;">
+      <span style="color: red; font-size: 20px;">🔴</span> High risk  
+      <span style="color: green; font-size: 20px;">🟢</span> Normal  
+      <span style="color: blue; font-size: 20px;">🔵</span> Low risk
+    </div>
+    
+            <canvas id="pieChart" style="max-width: 300px; max-height: 300px;"></canvas>
+            <div id="insightsText"></div>
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
