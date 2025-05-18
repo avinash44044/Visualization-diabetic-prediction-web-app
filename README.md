@@ -15,5 +15,4 @@ This project is a machine learning-based web application designed to assist diab
 - **Visualization:** matplotlib, seaborn
 - **Frontend:** HTML, CSS (optional: JavaScript or Bootstrap if used)
 
-## 📁 Project Structure
 
